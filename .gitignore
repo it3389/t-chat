@@ -1,0 +1,146 @@
+# TChat 项目 .gitignore 文件
+
+# ===== 运行时生成的文件和目录 =====
+
+# 日志文件
+logs/
+*.log
+tchat_*.log
+
+# 消息存储
+messages/
+messages.json
+
+# 账户数据
+accounts/
+account.json
+
+# 好友列表
+friends/
+friends.json
+
+# 文件传输目录
+files/
+files.json
+
+# ===== 开发环境文件 =====
+
+# VS Code 配置
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# GoLand 配置
+.idea/
+
+# 其他 IDE 配置
+*.swp
+*.swo
+*~
+
+# ===== 编译生成的文件 =====
+
+# 可执行文件
+*.exe
+*.exe~
+tchat.exe
+tchat_darwin
+tchat_linux
+tchat_windows.exe
+
+# 二进制文件
+*.bin
+*.out
+
+# 编译缓存
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+
+# ===== Go 相关 =====
+
+# Go 编译缓存
+go-build/
+*.test
+*.prof
+
+# Go 模块缓存（可选，通常不需要排除）
+# go.sum
+
+# ===== 操作系统生成的文件 =====
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ===== 临时文件 =====
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===== 配置文件（可选） =====
+
+# 本地配置文件
+config.local.json
+.env
+.env.local
+
+# ===== 测试相关 =====
+
+# 测试覆盖率报告
+coverage.out
+coverage.html
+
+# 测试数据
+testdata/
+test_output/
+
+# ===== 文档生成 =====
+
+# 自动生成的文档
+docs/generated/
+
+# ===== 其他 =====
+
+# 备份文件
+*.orig
+*.rej
+
+# 锁文件
+*.lock
+
+# 缓存目录
+.cache/
+cache/
+
+# 临时目录
+tmp/
+temp/
+dist/
